@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Faith & Grit Quote Generator</title>
+  <style>
+    /* SPIN ANIMATION */
+@keyframes spin {
+  0% { transform: rotate(0deg); opacity: 0.5; }
+  50% { transform: rotate(360deg); opacity: 0.3; }
+  100% { transform: rotate(0deg); opacity: 1; }
+}
+
+.spin-effect {
+  animation: spin 0.5s ease-in-out;
+}
+
+    body {
+      background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+      font-family: 'Segoe UI', sans-serif;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .quote-box {
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 2rem;
+      border-radius: 15px;
+      max-width: 700px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      margin-bottom: 2rem;
+      font-size: 1.4rem;
+      font-style: italic;
+    }
+
+    button {
+      background-color: #f5d670;
+      border: none;
+      padding: 0.75rem 2rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #e4c256;
+    }
+
+    .back-link {
+      color: #f5d670;
+      margin-top: 2rem;
+      display: inline-block;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <h1>Faith & Grit Quote Generator</h1>
+
+  <div class="quote-box" id="quoteBox">
+    "When you're grounded in God, no setback can shake you."
+  </div>
+
+  <button onclick="showNewQuote()">Show Another Quote</button>
+
+  <a class="back-link" href="scratch.html">← Back to Scratch Page</a>
+
+  <script>
+    const quotes = [
+      "When you're grounded in God, no setback can shake you.",
+      "Champions train in private. God refines them in silence.",
+      "Let your hustle glorify Him.",
+      "Grit grows where faith is firm.",
+      "Every loss is a lesson if God’s in the game.",
+      "I play for an audience of One.",
+      "Trust the grind. Trust God more.",
+      "God didn’t bring you this far to only bring you this far.",
+      "Pain is temporary. Purpose is eternal.",
+      "If God is your coach, you’re never off the team."
+    ];
+  
+    function showNewQuote() {
+      const box = document.getElementById('quoteBox');
+      box.classList.add('spin-effect');
+  
+      setTimeout(() => {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        box.textContent = quotes[randomIndex];
+        box.classList.remove('spin-effect');
+      }, 500);
+    }
+  </script>
+</body>
+</html>

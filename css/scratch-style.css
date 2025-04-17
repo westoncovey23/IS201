@@ -1,0 +1,101 @@
+/* === Page Base Styling === */
+body {
+    background-color: #f7f4eb;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #2c2c2c;
+  }
+  
+  /* === Back Link Styling === */
+  a[href="index.html"] {
+    display: block;
+    margin: 1.5rem 2rem 0.5rem;
+    font-weight: bold;
+    color: #6a11cb;
+    text-decoration: none;
+  }
+  
+  a[href="index.html"]:hover {
+    color: #2575fc;
+  }
+  
+  /* === Page Title === */
+  h1 {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-top: 2rem;
+    font-weight: 700;
+  }
+  
+  /* === Subnav Styling === */
+  nav {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 1rem;
+  }
+  
+  nav a {
+    color: #333;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+  }
+  
+  nav a:hover {
+    color: #0d6efd;
+  }
+  
+  /* === Section Styling === */
+  .section {
+    background: #ffffff;
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.07);
+  }
+  
+  /* === Section Headings === */
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.2rem;
+  }
+  
+  /* === Ordered/Unordered Lists === */
+  ol, ul {
+    padding-left: 2rem;
+    line-height: 1.8;
+  }
+  
+  /* === YouTube iframe Styling === */
+  iframe {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* === Tableau Section Tweak === */
+  #tableau-embed {
+    margin-top: 3rem;
+  }
+/* 🔘 Quote Generator Link Button */
+.quote-link-btn {
+    display: inline-block;
+    background-color: #f5d670;
+    color: #222;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 0.75rem 2rem;
+    border-radius: 30px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .quote-link-btn:hover {
+    background-color: #e4c256;
+    transform: scale(1.05);
+  }
+    
